@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1262" started-at="2019-06-11T20:51:01Z" finished-at="2019-06-11T20:51:02Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="1262" started-at="2019-06-11T20:51:01Z" finished-at="2019-06-11T20:51:02Z">
+      <class name="testRunner.TestRunner">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testRunner.TestRunner@29ca901e]" name="setUp" is-config="true" duration-ms="343" started-at="2019-06-11T14:51:01Z" finished-at="2019-06-11T14:51:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunner@29ca901e]" name="feature" duration-ms="402" started-at="2019-06-11T14:51:02Z" data-provider="features" finished-at="2019-06-11T14:51:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User Navigates to PHP Travelers]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="terDown()[pri:0, instance:testRunner.TestRunner@29ca901e]" name="terDown" is-config="true" duration-ms="0" started-at="2019-06-11T14:51:02Z" finished-at="2019-06-11T14:51:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terDown -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
