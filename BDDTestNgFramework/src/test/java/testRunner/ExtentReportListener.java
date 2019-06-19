@@ -36,7 +36,7 @@ public class ExtentReportListener {
 	
 	public static void testStepHandle(String TestStatus, WebDriver driver, ExtentTest extentTest, Throwable throwable) 
 	{
-		switch(TestStatus) {
+		/*switch(TestStatus) {
 		case"FAIL":
 			extentTest.fail(MarkupHelper.createLabel("Test case is failed", ExtentColor.RED));
 			extentTest.error(throwable.fillInStackTrace());
@@ -51,7 +51,22 @@ public class ExtentReportListener {
 		default:
 				break;
 		}
+		*/
 		
+
+		if(TestStatus.equalsIgnoreCase("FAIL")){
+			extentTest.fail(MarkupHelper.createLabel("Test case is failed", ExtentColor.RED));
+			extentTest.error(throwable.fillInStackTrace());
+			if (driver!=null) {
+				driver.quit();
+			}
+		}
+			
+			else if(TestStatus.equalsIgnoreCase("FAIL"))
+			{
+			extentTest.pass(MarkupHelper.createLabel("Test case is Passed", ExtentColor.GREEN));
+			
+			}
 		
 	}
 
