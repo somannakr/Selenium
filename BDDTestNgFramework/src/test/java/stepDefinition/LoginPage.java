@@ -25,7 +25,8 @@ public class LoginPage extends ExtentReportListener{
     	  test=test.createNode(Scenario.class, "Scenario name");
     	  LoginInfo=test.createNode(new GherkinKeyword("Given"),"Given Step name");
     	  LoginInfo.pass("launch the browser##############");
-      }catch (AssertionError | Exception e) {
+      }//catch (AssertionError | Exception e) 
+      catch (Exception e){
     	  testStepHandle("FAIL",driver,LoginInfo,e);
       }
 	}
@@ -71,7 +72,8 @@ public class LoginPage extends ExtentReportListener{
 	    	  test=test.createNode(Scenario.class, "Scenario name");
 	    	  LoginInfo=test.createNode(new GherkinKeyword("Given"),"I am in the home Page");
 	    	  LoginInfo.pass("launch the browser##############");
-	      }catch (AssertionError | Exception e) {
+	      }//catch (AssertionError | Exception e) 
+	      catch (Exception e){
 	    	  testStepHandle("FAIL",driver,LoginInfo,e);
 	      }
 	}
